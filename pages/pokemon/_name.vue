@@ -3,7 +3,7 @@
     <div class="flex items-center space-x-10">
       <div class="img-container bg-gray-700 rounded-full h-26 w-26 flex items-center justify-center">
         <img
-          :src="`/pokemons/${(pokemon && pokemon.id) || ''}.png`"
+          :src="`/images/pokemons/${(pokemon && pokemon.id) || ''}.png`"
           class="w-full"
           :alt="pokemon.name">
       </div>
