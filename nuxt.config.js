@@ -1,3 +1,5 @@
+import { routes } from './routes/index.js'
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -13,6 +15,14 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  },
+
+  generate: {
+    async routes () {
+      return [
+        ...await routes()
+      ]
+    }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
