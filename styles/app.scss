@@ -1,0 +1,18 @@
+@import 'tailwind-loves-sass';
+@import 'github-markdown-css/github-markdown.css';
+
+body {
+  @include apply("text-gray-800");
+}
+
+.big-title {
+  @include apply("text-5xl font-bold mb-10");
+}
+
+.medium-title {
+  @include apply("text-2xl font-bold mb-5");
+}
+
+.small-title {
+  @include apply("text-lg font-bold mb-3");
+}
