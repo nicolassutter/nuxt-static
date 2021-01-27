@@ -3,16 +3,17 @@
 
 body {
   @include apply("text-gray-800");
+  @include apply("bg-gray-100");
 }
 
 .big-title {
-  @include apply("text-5xl font-bold mb-10");
+  @include apply("text-6xl font-bold mb-10");
 }
 
 .medium-title {
-  @include apply("text-2xl font-bold mb-5");
+  @include apply("text-3xl font-bold mb-5");
 }
 
 .small-title {
-  @include apply("text-lg font-bold mb-3");
+  @include apply("text-xl font-bold mb-3");
 }

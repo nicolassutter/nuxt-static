@@ -19,7 +19,6 @@ export default {
   },
 
   created () {
-    console.log('test')
     this.blogPostContent = () => this.$markdown.loadContent()
   }
 }
