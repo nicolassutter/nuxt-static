@@ -43,19 +43,8 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     '@nuxtjs/tailwindcss',
-    'nuxt-markdown'
+    '@nuxt/content'
   ],
-
-  markdown: {
-    collections: [
-      {
-        name: 'posts-md',
-        directory: 'content/posts-md',
-        includeSubdirectories: false,
-        routePrefix: '/posts-md/'
-      }
-    ]
-  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

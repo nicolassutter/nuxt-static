@@ -8,7 +8,8 @@ export const routes = async () => {
 
   return pokemons.map(({ pokemon_species: pokemon }) => {
     return {
-      route: `/pokemon/${pokemon.name}`
+      route: `/pokemon/${pokemon.name}`,
+      title: pokemon.name
     }
   })
 }
