@@ -8,7 +8,9 @@
           :alt="pokemon.name">
       </div>
       <section>
-        <p class="big-title capitalize">{{ pokemon.name }}</p>
+        <p class="big-title capitalize">
+          {{ pokemon.name }}
+        </p>
       </section>
     </div>
 
@@ -48,10 +50,7 @@ export default {
 
   computed: {
     textEntries () {
-      if (this.pokemon) {
-        return this.pokemon.flavor_text_entries.filter(entry => entry.language.name === 'fr')
-      }
-      return []
+      return !this.pokemon ? [] : this.pokemon.flavor_text_entries.filter(entry => entry.language.name === 'fr')
     }
   }
 }
