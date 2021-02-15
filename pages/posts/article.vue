@@ -1,7 +1,7 @@
 <template>
   <main>
     <h1 class="big-title mb-10">
-      Article MD 1
+      Article 1
     </h1>
 
     <p>
