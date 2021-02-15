@@ -32,16 +32,12 @@ export default {
   name: 'Pokemon',
 
   async asyncData ({ params, redirect }) {
-    let pokemon = []
-
     try {
-      const { data } = await axios.get('https://pokeapi.co/api/v2/pokemon-species/' + params.name)
-      pokemon = data
+      const { data: pokemon } = await axios.get('https://pokeapi.co/api/v2/pokemon-species/' + params.name)
+      return { pokemon }
     } catch (error) {
       redirect('/')
     }
-
-    return { pokemon }
   },
 
   data () {

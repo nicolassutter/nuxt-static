@@ -1,4 +1,4 @@
-import { routes } from './routes/index.js'
+import { kantoRoutes } from './routes/index.js'
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
@@ -17,10 +17,19 @@ export default {
     ]
   },
 
+  /**
+   * Ici on génère nos routes
+   */
   generate: {
+    /**
+     * Peut être une fonction async ou un objet
+     */
     async routes () {
       return [
-        ...await routes()
+        /**
+         * On peut attendre que nos routes soient générées
+         */
+        ...await kantoRoutes()
       ]
     }
   },

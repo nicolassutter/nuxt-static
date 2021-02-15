@@ -8,10 +8,7 @@
 export default {
   async asyncData ({ $content, params }) {
     const page = await $content(`posts-md/${params.slug}`).fetch()
-
-    return {
-      page
-    }
+    return { page }
   }
 }
 </script>

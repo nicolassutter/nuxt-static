@@ -64,12 +64,12 @@
 </template>
 
 <script>
-import { routes } from '@/routes/index'
+import { kantoRoutes } from '@/routes/index'
 
 export default {
   async asyncData ({ $content }) {
     const postsMD = await $content('posts-md').fetch()
-    const _routes = await routes()
+    const _routes = await kantoRoutes()
 
     return { postsMD, routes: _routes }
   }
